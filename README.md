@@ -1,7 +1,7 @@
 # Happy Mobile
 
 ## About this project
-This project is being developed at the NextLevelWeek #3, organized by RocketSeat. It is an app that intends to help find near orphanages to visit. This project is divided in three repositories ([web](https://github.com/ladeira1/happy-web), mobile and [backend](https://github.com/ladeira1/happy-server)).
+This project is being developed at the NextLevelWeek #3, organized by Rocketseat. It is an app that intends to help find near orphanages to visit. This project is divided in three repositories ([web](https://github.com/ladeira1/happy-web), mobile and [backend](https://github.com/ladeira1/happy-server)).
 
 ## Getting Started
 ### Prerequisites
@@ -24,7 +24,7 @@ $ yarn
 ```
 
 #### Dependencies
-To connect with the server, if you're running the app on your smartphone, you'll need to change the baseURL in src/services/api.ts to your ip.
+To connect with the server, if you're running the app on your smartphone, you'll need to change the baseURL in `src/services/api.ts` to your ip.
 
 ### Running
 ```
@@ -40,8 +40,3 @@ $ npm start
 - [Expo](https://expo.io/)
 - [React-Navigation](https://reactnavigation.org/)
 - [Axios](https://github.com/axios/axios)
-
-
-yarn add @react-navigation/stack
-yarn add axios
-expo install expo-image-picker
