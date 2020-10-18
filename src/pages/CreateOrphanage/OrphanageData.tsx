@@ -88,11 +88,6 @@ export default function OrphanageData() {
         onChangeText={setAbout}
       />
 
-      <Text style={styles.label}>Whatsapp</Text>
-      <TextInput
-        style={styles.input}
-      />
-
       <Text style={styles.label}>Fotos</Text>
 
       <View style={styles.uploadedImagesContainer}>

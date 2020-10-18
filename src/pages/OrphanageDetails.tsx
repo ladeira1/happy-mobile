@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Image, View, ScrollView, Text, StyleSheet, Dimensions, ActivityIndicator, TouchableOpacity, Linking } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
-import { Feather, FontAwesome } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 
 import mapMarkerImg from '../images/map-marker.png';
 import { RectButton } from 'react-native-gesture-handler';
@@ -53,21 +53,21 @@ export default function OrphanageDetails() {
 
   return (
     <ScrollView style={styles.container}>
-      {orphanage.images.length > 0 && (
-        <View style={styles.imagesContainer}>
-          <ScrollView horizontal pagingEnabled>
-            {orphanage.images.map(image => (
-            <Image
-              key={image.id}
-              style={styles.image}
-              source={{ uri: image.url }}
-            />
 
-            ))}
+      <View style={styles.imagesContainer}>
+        <ScrollView horizontal pagingEnabled>
+          {orphanage.images.map(image => {
+            console.log(image.url)
+            return (
+              <Image
+                key={image.id}
+                style={styles.image}
+                source={{ uri: image.url }}
+              />
+            )
+         })}
         </ScrollView>
-        </View>
-        )}
-
+      </View>
 
       <View style={styles.detailsContainer}>
         <Text style={styles.title}>{orphanage.name}</Text>
@@ -124,11 +124,6 @@ export default function OrphanageDetails() {
           )}
 
         </View>
-
-        <RectButton style={styles.contactButton} onPress={() => {}}>
-          <FontAwesome name="whatsapp" size={24} color="#FFF" />
-          <Text style={styles.contactButtonText}>Entrar em contato</Text>
-        </RectButton>
       </View>
     </ScrollView>
   )
