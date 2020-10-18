@@ -1,5 +1,12 @@
 # Happy Mobile
-
+<p align = 'center'>
+  <img src="https://github.com/ladeira1/happy-server/blob/main/docs/orphanages-map.png?raw=true" alt="Logo">
+  <img src="https://github.com/ladeira1/happy-server/blob/main/docs/create-orphanage.png?raw=true" alt="Logo">
+  <img src="https://github.com/ladeira1/happy-server/blob/main/docs/create-orphanage-2.png?raw=true" alt="Logo">
+  <img src="https://github.com/ladeira1/happy-server/blob/main/docs/orphanage.png?raw=true" alt="Logo">
+  <img src="https://github.com/ladeira1/happy-server/blob/main/docs/orphanage-2.png?raw=true" alt="Logo">
+ 
+</p>
 ## About this project
 This project is being developed at the NextLevelWeek #3, organized by Rocketseat. It is an app that intends to help find near orphanages to visit. This project is divided in three repositories ([web](https://github.com/ladeira1/happy-web), mobile and [backend](https://github.com/ladeira1/happy-server)).
 
