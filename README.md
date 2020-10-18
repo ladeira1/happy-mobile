@@ -7,6 +7,7 @@
   <img src="https://github.com/ladeira1/happy-mobile/blob/main/docs/orphanage-2.png?raw=true" alt="Logo">
  
 </p>
+
 ## About this project
 This project is being developed at the NextLevelWeek #3, organized by Rocketseat. It is an app that intends to help find near orphanages to visit. This project is divided in three repositories ([web](https://github.com/ladeira1/happy-web), mobile and [backend](https://github.com/ladeira1/happy-server)).
 
