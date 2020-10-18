@@ -1,10 +1,10 @@
 # Happy Mobile
 <p align = 'center'>
-  <img src="https://github.com/ladeira1/happy-server/blob/main/docs/orphanages-map.png?raw=true" alt="Logo">
-  <img src="https://github.com/ladeira1/happy-server/blob/main/docs/create-orphanage.png?raw=true" alt="Logo">
-  <img src="https://github.com/ladeira1/happy-server/blob/main/docs/create-orphanage-2.png?raw=true" alt="Logo">
-  <img src="https://github.com/ladeira1/happy-server/blob/main/docs/orphanage.png?raw=true" alt="Logo">
-  <img src="https://github.com/ladeira1/happy-server/blob/main/docs/orphanage-2.png?raw=true" alt="Logo">
+  <img src="https://github.com/ladeira1/happy-mobile/blob/main/docs/orphanages-map.png?raw=true" alt="Logo">
+  <img src="https://github.com/ladeira1/happy-mobile/blob/main/docs/create-orphanage.png?raw=true" alt="Logo">
+  <img src="https://github.com/ladeira1/happy-mobile/blob/main/docs/create-orphanage-2.png?raw=true" alt="Logo">
+  <img src="https://github.com/ladeira1/happy-mobile/blob/main/docs/orphanage.png?raw=true" alt="Logo">
+  <img src="https://github.com/ladeira1/happy-mobile/blob/main/docs/orphanage-2.png?raw=true" alt="Logo">
  
 </p>
 ## About this project
