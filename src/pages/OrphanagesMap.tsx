@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -18,6 +18,10 @@ import {
 import mapMarker from '../images/map-marker.png';
 import { RectButton } from 'react-native-gesture-handler';
 import api from '../services/api';
+import {
+  requestPermissionsAsync,
+  getCurrentPositionAsync,
+} from 'expo-location';
 
 interface Orphanage {
   id: number;
@@ -29,6 +33,8 @@ interface Orphanage {
 export default function OrphanagesMap() {
   const navigation = useNavigation();
   const [orphanages, setOrphanages] = useState<Orphanage[]>([])
+  const [lat, setLat] = useState<number>(-22.5052230)
+  const [lon, setLon] = useState<number>(-41.9512004)
 
   useFocusEffect(() => {
     api.get('orphanages').then(res => {
@@ -36,12 +42,28 @@ export default function OrphanagesMap() {
     })
   }, [])
 
+  useEffect(() => {
+    const getUserLocation = async () => {
+      const {granted} = await requestPermissionsAsync();
+      if(granted) {
+        const location = await getCurrentPositionAsync({})
+
+        const { latitude, longitude } = location.coords
+        if(!latitude || !longitude) return
+
+        setLat(latitude)
+        setLon(longitude)
+      }
+    }
+    getUserLocation()
+  }, [])
+
   function handleNavigateToOrphanageDetails(id: number) {
     navigation.navigate('OrphanageDetails', { id });
   }
 
   function handleNavigateToCreateOrphanage() {
-    navigation.navigate('SelectMapPosition');
+    navigation.navigate('SelectMapPosition', {lat, lon});
   }
 
   return (
@@ -50,8 +72,8 @@ export default function OrphanagesMap() {
         provider = {PROVIDER_GOOGLE}
         style = {styles.map}
         initialRegion={{
-          latitude: -22.5247232,
-          longitude: -41.9463168,
+          latitude: lat!,
+          longitude: lon!,
           latitudeDelta: 0.008,
           longitudeDelta: 0.008,
         }}
